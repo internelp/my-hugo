@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title> {{ .Title }} </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    {{ .Hugo.Generator }}
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/poole.css">
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  </head>
+  <body>
+    <header>
+      <menu>
+        <logo>
+          <a href="{{ .Site.BaseURL }}">
+            <img src="/img/logo.png" alt="{{ .Site.Title }}" />
+          </a>
+        </logo>
+        <nav>
+          <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="#">第一个分类</a></li>
+            <li><a href="#">第二个分类</a></li>
+          </ul>
+        </nav>
+      </menu>
+    </header>
