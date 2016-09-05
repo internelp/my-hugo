@@ -50,7 +50,7 @@ body {
 
 @media (min-width: 38em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
   }
 }
@@ -107,16 +107,6 @@ p {
   margin-bottom: 0.5rem;
 }
 
-strong {
-  color: #303030;
-}
-
-
-/* Lists */
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 
 dt {
   font-weight: bold;

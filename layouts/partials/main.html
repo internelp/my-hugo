@@ -5,34 +5,40 @@
             <div class="author-panel">
                 <span class="category">{{ .Params.categories }}</span>
                 <div class="author">
-                    <span class="name">{{.Params}}</span>
-                    <span class="time">• {{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+                    <span class="name">{{ .Params.recommendedby }}</span>
+                    <span class="time">• {{ .Date.Format "Jan 2, 2006" }}</span>
                 </div>
                 <span class="empty"></span>
             </div>
             <div class="tableOfContents">
                 {{ .TableOfContents }}
             </div>
-{{ .URL }}
             <div class="content">
                 {{ .Content }}
             </div>
             原创文章，如若转载，请注明出处：
-<!--     <div>
-        {{ if .Prev }}
-          <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
-        {{ end }}
-        {{ if .Next }}
-          <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-        {{ end }}
-    </div> -->
-
-
-{{ partial "duoshuo.html" . }}
+            <div class="entry-relate-links">
+                <p> 前一篇：
+                    {{ if .Prev }}
+                        <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
+                    {{ else }}
+                        这里是互联网的开始，请点击后一篇开始冲浪吧。
+                    {{ end }}
+                </p>
+                <p>后一篇：
+                    {{ if .Next }}
+                        <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+                    {{ else }}
+                        您已到达互联网的最后一页。祝您网上冲浪愉快。现在，确实没有什么可浏览的内容了。您可以安全地关闭计算机，然后回到现实生活中。
+                    {{ end }}
+                </p>
+            </div>
+            <div class="comment">
+                {{ partial "comment.html" . }}
+            </div> 
         </div>
 
     </article>
-    <div id="sidebar">侧边栏</div>
-
+    {{ partial "sidebar.html" . }}
     <div class="empty"></div>
 </div>

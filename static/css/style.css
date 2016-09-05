@@ -33,9 +33,15 @@
     }
 
     #sidebar {
-        width: 29%;
+        width: 25%;
         float: right;
         border:1px dotted blue;
+        margin-top: 83px;
+    }
+    .sidebar_top_ad {
+        border:1px dotted rgb(222,222,222);
+        border-radius:4px;
+
     }
     .sidebar_box {
 
@@ -99,7 +105,7 @@ header menu nav ul {
 }
 header menu nav ul li {
     float:left;
-    font-size:1rem;
+    font-size:1.2rem;
     color:rgb(61,70,77);
     text-align:center;
     padding:0 20px;
@@ -169,5 +175,19 @@ article p {
 .tableOfContents {
     position: float;
     float:right;
-    /*border: 1px dotted blue;*/
+    border: 1px dotted #268bd2;
+    background: #f7f7f7;
+    padding: 10px 20px 10px ;
+    border-radius:4px;
+
+}
+
+.entry-relate-links {
+    border-top:1px solid rgb(222,222,222);
+    border-bottom: 1px solid rgb(222,222,222);
+    padding: 10px 0;
+}
+
+ul,li {
+    padding: 0 0 0 10px ;
 }
